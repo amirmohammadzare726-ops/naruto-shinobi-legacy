@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b12">
+<meta name="description" content="NARUTO: SHINOBI LEGACY — prototype">
+<title>SHINOBI LEGACY | میراث شینوبی</title>
+<style>
+:root{color-scheme:dark;--bg:#080a11;--line:#ffffff1c;--text:#f4f3f7;--muted:#a6a8b6;--red:#f04455;--gold:#d7b77a}
+*{box-sizing:border-box}html{min-height:100%;background:var(--bg)}body{margin:0;min-height:100dvh;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 50% 28%,#3d1423 0,#15101c 36%,#080a11 76%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 35%,#ef43550b 50%,transparent 65%),radial-gradient(circle at 15% 85%,#b7334218,transparent 35%);animation:ambient 9s ease-in-out infinite alternate}
+@keyframes ambient{to{filter:hue-rotate(14deg);transform:scale(1.04)}}.wrap{position:relative;min-height:100dvh;display:grid;place-items:center;padding:24px 16px}.shell{width:min(100%,480px);border:1px solid var(--line);background:linear-gradient(145deg,#171a28e8,#090b12f2);border-radius:24px;overflow:hidden;box-shadow:0 28px 90px #0009;position:relative}.hero{height:190px;position:relative;display:flex;align-items:end;padding:22px;background:linear-gradient(0deg,#0c0e17 0%,#0c0e1733 65%,#0c0e1766),radial-gradient(circle at 50% 25%,#7c2636 0,#291323 36%,#10121d 75%);isolation:isolate}.seal{position:absolute;inset:22px auto auto 50%;transform:translateX(-50%);width:105px;height:105px;border:1px solid #f0445577;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 35px #f0445526,inset 0 0 24px #f0445517}.seal:before,.seal:after{content:"";position:absolute;inset:10px;border:1px dashed #e7b7a955;border-radius:50%;animation:spin 26s linear infinite}.seal:after{inset:22px;border-style:solid;animation-direction:reverse;animation-duration:18s}@keyframes spin{to{transform:rotate(360deg)}}.kanji{font-size:39px;color:#f5d8d8;text-shadow:0 0 22px #f04455}.eyebrow{font-size:10px;letter-spacing:3px;color:#e9b8bd;direction:ltr;text-align:right}.brand{font-size:25px;letter-spacing:1.8px;direction:ltr;text-align:right;font-weight:900;margin-top:5px}.subtitle{font-size:12px;color:var(--muted);margin-top:3px}.content{padding:23px 22px 24px}.intro{font-size:13px;color:#c7c7d1;line-height:1.9;margin:0 0 20px}.tabs{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:5px;border:1px solid var(--line);border-radius:13px;background:#080a1199;margin-bottom:17px}.tab{border:0;border-radius:9px;padding:11px 8px;color:var(--muted);background:transparent;font:inherit;font-size:13px}.tab.active{background:#70202f;color:#fff;box-shadow:0 4px 16px #ef43551b}label{display:block;font-size:12px;color:#d9d8e1;margin:14px 0 7px}input{width:100%;border:1px solid #ffffff20;background:#080a11;color:white;border-radius:11px;padding:13px 12px;font:inherit;font-size:14px;outline:none}input:focus{border-color:#f04455aa;box-shadow:0 0 0 3px #f0445516}.primary,.secondary{width:100%;border-radius:12px;padding:13px;font:inherit;margin-top:10px}.primary{border:1px solid #ff8791;background:linear-gradient(110deg,#a52137,#e13a4b);color:#fff;font-weight:750;margin-top:19px;box-shadow:0 8px 22px #d52c402b}.secondary{border:1px solid var(--line);background:#ffffff07;color:#dddde5}.notice{font-size:11px;color:#a8a9b5;line-height:1.8;margin:14px 0 0}.status{min-height:22px;color:var(--gold);font-size:12px;margin-top:12px}.footer{display:flex;justify-content:space-between;gap:12px;padding:13px 22px;border-top:1px solid var(--line);color:#777b8c;font-size:10px}@media(min-height:800px){.hero{height:220px}.content{padding:27px 25px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="shell" aria-label="ورود به میراث شینوبی">
+<header class="hero"><div class="seal" aria-hidden="true"><span class="kanji">忍</span></div><div><div class="eyebrow">THE WILL NEVER ENDS</div><div class="brand">SHINOBI LEGACY</div><div class="subtitle">میراث شینوبی · پیش‌نمایش رابط ورود</div></div></header>
+<div class="content">
+<p class="intro">مهر قدیمی شکسته شده است. رد تازه‌ای از چاکرا در مرز روستا دیده می‌شود؛ اما پیش از ورود به جهان شینوبی، باید پرونده‌ات را آماده کنی.</p>
+<div class="tabs"><button class="tab active" id="loginTab" type="button" aria-selected="true">ورود شینوبی</button><button class="tab" id="registerTab" type="button" aria-selected="false">ساخت پرونده</button></div>
+<form id="entryForm">
+<label for="username">شناسه‌ی شینوبی</label><input id="username" name="username" autocomplete="username" minlength="3" maxlength="24" placeholder="نام کاربری" required>
+<div id="displayNameWrap" hidden><label for="displayName">نام نمایشی</label><input id="displayName" name="displayName" maxlength="24" placeholder="نامی که دیگران می‌بینند"></div>
+<label for="password">رمز عبور</label><input id="password" name="password" type="password" autocomplete="current-password" minlength="8" maxlength="72" placeholder="حداقل ۸ نویسه" required>
+<button class="primary" type="submit" id="submitButton">ورود به جهان</button><button class="secondary" type="button" id="storyButton">نمایش روایت آغازین</button><div class="status" id="status" role="status" aria-live="polite"></div>
+</form>
+<p class="notice">نسخه‌ی نمایشی رابط است؛ هنوز حساب واقعی ایجاد نمی‌کند و رمز عبور را به هیچ‌جا ارسال نمی‌کند. اتصال احراز هویت پس از راه‌اندازی امن سرور انجام می‌شود.</p>
+</div>
+<footer class="footer"><span>نسخه‌ی پایه · 0.1.0</span><span>مناسب موبایل · فارسی RTL</span></footer>
+</section>
+</main>
+<script>
+const loginTab=document.querySelector("#loginTab"),registerTab=document.querySelector("#registerTab"),displayWrap=document.querySelector("#displayNameWrap"),password=document.querySelector("#password"),submit=document.querySelector("#submitButton"),statusBox=document.querySelector("#status");
+function setMode(isRegister){loginTab.classList.toggle("active",!isRegister);registerTab.classList.toggle("active",isRegister);loginTab.setAttribute("aria-selected",String(!isRegister));registerTab.setAttribute("aria-selected",String(isRegister));displayWrap.hidden=!isRegister;submit.textContent=isRegister?"ساخت پرونده‌ی شینوبی":"ورود به جهان";password.autocomplete=isRegister?"new-password":"current-password";statusBox.textContent="";}
+loginTab.addEventListener("click",()=>setMode(false));registerTab.addEventListener("click",()=>setMode(true));
+document.querySelector("#entryForm").addEventListener("submit",event=>{event.preventDefault();statusBox.textContent="این فرم فقط نمایشی است؛ پس از اتصال سرور، ورود امن فعال می‌شود.";});
+document.querySelector("#storyButton").addEventListener("click",()=>{statusBox.textContent="باد از میان درختان می‌گذرد. کنار دروازه، طوماری با مهر ناشناس پیدا شده است.";});
+</script>
+</body>
+</html>
